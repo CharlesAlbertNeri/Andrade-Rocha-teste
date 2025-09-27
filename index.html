@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrade & Rocha contabilidade</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            box-sizing: border-box;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        .fade-in {
+            animation: fadeIn 0.8s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-lg fixed w-full top-0 z-50">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <i class="fas fa-calculator text-3xl text-blue-600 mr-3"></i>
+                    <h1 class="text-2xl font-bold text-gray-800">Andrade & Rocha </h1>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#inicio" class="text-gray-700 hover:text-blue-600 transition duration-300">Início</a>
+                    <a href="#servicos" class="text-gray-700 hover:text-blue-600 transition duration-300">Serviços</a>
+                    <a href="#portfolio" class="text-gray-700 hover:text-blue-600 transition duration-300">Portfólio</a>
+                    <a href="#contato" class="text-gray-700 hover:text-blue-600 transition duration-300">Contato</a>
+                    <a href="#newsletter" class="text-gray-700 hover:text-blue-600 transition duration-300">Newsletter</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-gray-700">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+                <a href="#inicio" class="block py-2 text-gray-700 hover:text-blue-600">Início</a>
+                <a href="#servicos" class="block py-2 text-gray-700 hover:text-blue-600">Serviços</a>
+                <a href="#portfolio" class="block py-2 text-gray-700 hover:text-blue-600">Portfólio</a>
+                <a href="#contato" class="block py-2 text-gray-700 hover:text-blue-600">Contato</a>
+                <a href="#newsletter" class="block py-2 text-gray-700 hover:text-blue-600">Newsletter</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="gradient-bg text-white pt-24 pb-20">
+        <div class="container mx-auto px-6 text-center">
+            <div class="fade-in">
+                <h2 class="text-5xl font-bold mb-6">Sua Contabilidade em Boas Mãos</h2>
+                <p class="text-xl mb-8 max-w-3xl mx-auto">Oferecemos soluções contábeis completas para empresas de todos os portes. Experiência, confiabilidade e resultados que fazem a diferença.</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#contato" class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300">Entre em Contato</a>
+                    <a href="#servicos" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition duration-300">Nossos Serviços</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicos" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h3 class="text-4xl font-bold text-gray-800 mb-4">Nossos Serviços</h3>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Soluções contábeis completas para o sucesso do seu negócio</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card-hover bg-gray-50 p-8 rounded-xl text-center">
+                    <i class="fas fa-file-invoice-dollar text-4xl text-blue-600 mb-4"></i>
+                    <h4 class="text-xl font-semibold mb-4">Contabilidade Geral</h4>
+                    <p class="text-gray-600">Escrituração contábil completa, balancetes e demonstrações financeiras.</p>
+                </div>
+                <div class="card-hover bg-gray-50 p-8 rounded-xl text-center">
+                    <i class="fas fa-chart-line text-4xl text-blue-600 mb-4"></i>
+                    <h4 class="text-xl font-semibold mb-4">Consultoria Fiscal</h4>
+                    <p class="text-gray-600">Planejamento tributário e orientação fiscal para otimizar seus impostos.</p>
+                </div>
+                <div class="card-hover bg-gray-50 p-8 rounded-xl text-center">
+                    <i class="fas fa-users text-4xl text-blue-600 mb-4"></i>
+                    <h4 class="text-xl font-semibold mb-4">Departamento Pessoal</h4>
+                    <p class="text-gray-600">Folha de pagamento, admissões, demissões e obrigações trabalhistas.</p>
+                </div>
+                <div class="card-hover bg-gray-50 p-8 rounded-xl text-center">
+                    <i class="fas fa-building text-4xl text-blue-600 mb-4"></i>
+                    <h4 class="text-xl font-semibold mb-4">Abertura de Empresas</h4>
+                    <p class="text-gray-600">Constituição de empresas e alterações contratuais com agilidade.</p>
+                </div>
+                <div class="card-hover bg-gray-50 p-8 rounded-xl text-center">
+                    <i class="fas fa-clipboard-check text-4xl text-blue-600 mb-4"></i>
+                    <h4 class="text-xl font-semibold mb-4">Compliance</h4>
+                    <p class="text-gray-600">Adequação às normas e regulamentações do seu setor.</p>
+                </div>
+                <div class="card-hover bg-gray-50 p-8 rounded-xl text-center">
+                    <i class="fas fa-handshake text-4xl text-blue-600 mb-4"></i>
+                    <h4 class="text-xl font-semibold mb-4">Consultoria Empresarial</h4>
+                    <p class="text-gray-600">Análises financeiras e estratégias para o crescimento do negócio.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h3 class="text-4xl font-bold text-gray-800 mb-4">Nosso Portfólio</h3>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Casos de sucesso e clientes satisfeitos</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card-hover bg-white p-6 rounded-xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-store text-3xl text-green-600 mr-4"></i>
+                        <div>
+                            <h4 class="text-lg font-semibold">Varejo Fashion</h4>
+                            <p class="text-gray-600 text-sm">Rede de lojas</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">Implementação completa de sistema contábil e redução de 30% nos custos tributários.</p>
+                    <div class="flex items-center text-sm text-gray-600">
+                        <i class="fas fa-calendar mr-2"></i>
+                        <span>Cliente desde 2020</span>
+                    </div>
+                </div>
+                <div class="card-hover bg-white p-6 rounded-xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-laptop-code text-3xl text-blue-600 mr-4"></i>
+                        <div>
+                            <h4 class="text-lg font-semibold">TechStart Solutions</h4>
+                            <p class="text-gray-600 text-sm">Startup de tecnologia</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">Estruturação contábil desde a abertura, apoio na captação de investimentos.</p>
+                    <div class="flex items-center text-sm text-gray-600">
+                        <i class="fas fa-calendar mr-2"></i>
+                        <span>Cliente desde 2021</span>
+                    </div>
+                </div>
+                <div class="card-hover bg-white p-6 rounded-xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-utensils text-3xl text-orange-600 mr-4"></i>
+                        <div>
+                            <h4 class="text-lg font-semibold">Restaurante Sabor & Arte</h4>
+                            <p class="text-gray-600 text-sm">Gastronomia</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">Otimização fiscal e controle de custos, resultando em 25% de economia.</p>
+                    <div class="flex items-center text-sm text-gray-600">
+                        <i class="fas fa-calendar mr-2"></i>
+                        <span>Cliente desde 2019</span>
+                    </div>
+                </div>
+                <div class="card-hover bg-white p-6 rounded-xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-truck text-3xl text-purple-600 mr-4"></i>
+                        <div>
+                            <h4 class="text-lg font-semibold">LogiTrans</h4>
+                            <p class="text-gray-600 text-sm">Transportadora</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">Regularização fiscal completa e implementação de controles internos.</p>
+                    <div class="flex items-center text-sm text-gray-600">
+                        <i class="fas fa-calendar mr-2"></i>
+                        <span>Cliente desde 2018</span>
+                    </div>
+                </div>
+                <div class="card-hover bg-white p-6 rounded-xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-home text-3xl text-red-600 mr-4"></i>
+                        <div>
+                            <h4 class="text-lg font-semibold">Construtora Horizonte</h4>
+                            <p class="text-gray-600 text-sm">Construção civil</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">Gestão contábil de múltiplos empreendimentos e planejamento tributário.</p>
+                    <div class="flex items-center text-sm text-gray-600">
+                        <i class="fas fa-calendar mr-2"></i>
+                        <span>Cliente desde 2017</span>
+                    </div>
+                </div>
+                <div class="card-hover bg-white p-6 rounded-xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-graduation-cap text-3xl text-indigo-600 mr-4"></i>
+                        <div>
+                            <h4 class="text-lg font-semibold">Instituto Educar</h4>
+                            <p class="text-gray-600 text-sm">Educação</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">Adequação às normas educacionais e otimização de benefícios fiscais.</p>
+                    <div class="flex items-center text-sm text-gray-600">
+                        <i class="fas fa-calendar mr-2"></i>
+                        <span>Cliente desde 2022</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contato" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h3 class="text-4xl font-bold text-gray-800 mb-4">Entre em Contato</h3>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Estamos prontos para ajudar sua empresa a crescer</p>
+            </div>
+            <div class="grid lg:grid-cols-2 gap-12">
+                <div>
+                    <h4 class="text-2xl font-semibold mb-6 text-gray-800">Informações de Contato</h4>
+                    <div class="space-y-6">
+                        <div class="flex items-center">
+                            <i class="fas fa-map-marker-alt text-2xl text-blue-600 mr-4"></i>
+                            <div>
+                                <p class="font-semibold">Endereço</p>
+                                <p class="text-gray-600">Avenida Tancredo Neves<br>1632, Edifício Salvador Trade Center, Torre Norte, Sala 1408 
+Caminho das Árvores, Salvador - Bahia, CEP. 41.820-020.   </p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-phone text-2xl text-blue-600 mr-4"></i>
+                            <div>
+                                <p class="font-semibold">Telefone</p>
+                                <p class="text-gray-600">(11) 3456-7890</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope text-2xl text-blue-600 mr-4"></i>
+                            <div>
+                                <p class="font-semibold">E-mail</p>
+                                <p class="text-gray-600">contabil@andradeerocha.com.br
+</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-clock text-2xl text-blue-600 mr-4"></i>
+                            <div>
+                                <p class="font-semibold">Horário de Funcionamento</p>
+                                <p class="text-gray-600">Segunda a Sexta: 8h às 18h<br>Sábado: 8h às 12h</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-2xl font-semibold mb-6 text-gray-800">Redes Sociais</h4>
+                    <p class="text-gray-600 mb-6">Siga-nos nas redes sociais e fique por dentro das novidades do mundo contábil:</p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <a href="https://w.app/andradeerochacontabilidade" target="_blank" rel="noopener noreferrer" class="card-hover bg-green-500 text-white p-6 rounded-xl text-center hover:bg-green-600 transition duration-300">
+                            <i class="fab fa-whatsapp text-3xl mb-3"></i>
+                            <p class="font-semibold">WhatsApp</p>
+                            <p class="text-sm opacity-90">Chat direto</p>
+                        </a>
+                        <a href="https://www.instagram.com/andradeerocha" target="_blank" rel="noopen  r noreferrer" class="card-hover bg-gradient-to-r from-purple-500 to-pink-500 text-white p-6 rounded-xl text-center hover:from-purple-600 hover:to-pink-600 transition duration-300">
+                            <i class="fab fa-instagram text-3xl mb-3"></i>
+                            <p class="font-semibold">Instagram</p>
+                            <p class="text-sm opacity-90">contabil@andradeerocha.com.br</p>
+                        </a>
+                        <a href="https://linkedin.com/company/contabilidade-excellence" target="_blank" rel="noopener noreferrer" class="card-hover bg-blue-600 text-white p-6 rounded-xl text-center hover:bg-blue-700 transition duration-300">
+                            <i class="fab fa-linkedin text-3xl mb-3"></i>
+                            <p class="font-semibold">LinkedIn</p>
+                            <p class="text-sm opacity-90">Rede profissional</p>
+                        </a>
+                        <a href="https://facebook.com/contabilidadeexcellence" target="_blank" rel="noopener noreferrer" class="card-hover bg-blue-500 text-white p-6 rounded-xl text-center hover:bg-blue-600 transition duration-300">
+                            <i class="fab fa-facebook text-3xl mb-3"></i>
+                            <p class="font-semibold">Facebook</p>
+                            <p class="text-sm opacity-90">Página oficial</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section id="newsletter" class="py-20 gradient-bg text-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <h3 class="text-4xl font-bold mb-4">Newsletter Excellence</h3>
+                <p class="text-xl mb-8">Receba dicas contábeis, mudanças na legislação e conteúdos exclusivos diretamente no seu e-mail</p>
+                
+                <form id="newsletter-form" class="max-w-md mx-auto mb-8">
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <input 
+                            type="email" 
+                            id="newsletter-email" 
+                            placeholder="Seu melhor e-mail" 
+                            required
+                            class="flex-1 px-4 py-3 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-white"
+                        >
+                        <button 
+                            type="submit" 
+                            class="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300"
+                        >
+                            Inscrever-se
+                        </button>
+                    </div>
+                </form>
+
+                <div id="newsletter-success" class="hidden bg-green-500 text-white p-4 rounded-lg mb-6">
+                    <i class="fas fa-check-circle mr-2"></i>
+                    Obrigado! Você foi inscrito com sucesso na nossa newsletter.
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8 text-center">
+                    <div>
+                        <i class="fas fa-newspaper text-3xl mb-4"></i>
+                        <h4 class="text-xl font-semibold mb-2">Conteúdo Semanal</h4>
+                        <p class="opacity-90">Artigos e dicas toda semana</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-gavel text-3xl mb-4"></i>
+                        <h4 class="text-xl font-semibold mb-2">Mudanças Legais</h4>
+                        <p class="opacity-90">Fique atualizado com a legislação</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-gift text-3xl mb-4"></i>
+                        <h4 class="text-xl font-semibold mb-2">Conteúdo Exclusivo</h4>
+                        <p class="opacity-90">Materiais apenas para assinantes</p>
+                    </div>
+                </div>
+
+                <!-- Newsletter Subscribers Count -->
+                <div class="mt-12 bg-white bg-opacity-20 rounded-lg p-6">
+                    <h4 class="text-2xl font-semibold mb-4">Nossos Assinantes</h4>
+                    <div class="text-4xl font-bold mb-2" id="subscriber-count">1,247</div>
+                    <p class="opacity-90">profissionais já recebem nossa newsletter</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-calculator text-2xl text-blue-400 mr-3"></i>
+                        <h4 class="text-xl font-bold">Andrade & Rocha</h4>
+                    </div>
+                    <p class="text-gray-400">Sua parceira de confiança em soluções contábeis há mais de 15 anos.</p>
+                </div>
+                <div>
+                    <h5 class="text-lg font-semibold mb-4">Serviços</h5>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Contabilidade Geral</li>
+                        <li>Consultoria Fiscal</li>
+                        <li>Departamento Pessoal</li>
+                        <li>Abertura de Empresas</li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-lg font-semibold mb-4">Contato</h5>
+                    <ul class="space-y-2 text-gray-400">
+                        <li> 71 3014-3173 / 71 98707-6158</li>
+                        <li>contabil@andradeerocha.com.br</li>
+                        <li>Avenida Tancredo Neves, 1632, Edifício Salvador Trade Center, Torre Norte, Sala 1408, Caminho das Árvores.</li>
+                        <li>Salvador - Bahia, CEP- 41.820-020. </li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-lg font-semibold mb-4">Redes Sociais</h5>
+                    <div class="flex space-x-4">
+                        <a href="https://facebook.com/contabilidadeexcellence" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-facebook text-xl"></i>
+                        </a>
+                        <a href="https://www.instagram.com/andradeerocha" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="https://linkedin.com/company/contabilidade-excellence" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                        <a href="https://wa.me/5511987654321" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-whatsapp text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Andrade & Rocha. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    // Close mobile menu if open
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+
+        // Newsletter form handling
+        const newsletterForm = document.getElementById('newsletter-form');
+        const newsletterSuccess = document.getElementById('newsletter-success');
+        const subscriberCount = document.getElementById('subscriber-count');
+        let currentCount = 1247;
+
+        newsletterForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const email = document.getElementById('newsletter-email').value;
+            
+            if (email) {
+                // Simulate newsletter subscription
+                newsletterSuccess.classList.remove('hidden');
+                newsletterForm.reset();
+                
+                // Update subscriber count
+                currentCount++;
+                subscriberCount.textContent = currentCount.toLocaleString();
+                
+                // Hide success message after 5 seconds
+                setTimeout(() => {
+                    newsletterSuccess.classList.add('hidden');
+                }, 5000);
+            }
+        });
+
+        // Add scroll effect to header
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.classList.add('bg-opacity-95');
+            } else {
+                header.classList.remove('bg-opacity-95');
+            }
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'984adac276e2e117',t:'MTc1ODgwNjc5OS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
